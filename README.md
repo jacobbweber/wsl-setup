@@ -9,14 +9,14 @@ new ubuntu wsl
 ```bash
 sudo apt -y update 
 sudo apt -y install ansible 
-sudo pip3 install ansible 
+** didnt need to do this step? sudo pip3 install ansible 
 ```
 
 ## kerberos authentication support
 ```bash
 sudo apt -y install python3-pip
-sudo apt-get -y install python3-dev libkrb5-dev krb5-user
-pip3 install pywinrm[kerberos]
+** Already installed from previous step sudo apt-get -y install python3-dev libkrb5-dev krb5-user
+** Already installed from previous step pip3 install pywinrm[kerberos]
 ```
 
 ### https://access.redhat.com/solutions/3486461
