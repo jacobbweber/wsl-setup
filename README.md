@@ -1,5 +1,10 @@
 # wsl-setup
 
+## From an elevated Powershell
+```bash
+wsl --install
+```
+
 ## WSL 20.04 Setup
 new ubuntu wsl 
 ```bash
