@@ -5,7 +5,6 @@
 wsl --install
 ```
 
-## WSL 20.04 Setup
 new ubuntu wsl 
 ```bash
 sudo apt -y update 
