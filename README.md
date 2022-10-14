@@ -71,3 +71,32 @@ Restart wsl (Windows powershell) using
 ```powershell
 wsl --shutdown
 ```
+
+### Notes:
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
+If you are seeking to access the Windows file directory from your WSL distribution command line, instead of C:\Users\username, the directory would be accessed using /mnt/c/Users/username, because the Linux distribution views your Windows file system as a mounted drive.
+
+### Setup Git in WSL
+
+For the latest stable Git version in Ubuntu/Debian, enter the command:
+```bash
+sudo apt-get install git
+```
+### Git config file setup:
+To set up your Git config file, open a command line for the distribution you're working in and set your name with this command (replacing "Your Name" with your preferred username):
+```bash
+git config --global user.name "Your Name"
+```
+Set your email with this command (replacing "youremail@domain.com" with the email you prefer):
+```bash
+git config --global user.email "youremail@domain.com"
+````
+To set up GCM for use with a WSL distribution, open your distribution and enter this command: This needs troubleshooting, not working
+```bash
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+```
+For AzureDevops Repos
+```bash
+git config --global credential.https://dev.azure.com.useHttpPath true
+```
+
