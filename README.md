@@ -27,7 +27,7 @@ pip install --upgrade {pywinrm,pykerberos,requests-kerberos,requests-ntlm}
 
 ### configure realms in krb5.conf
 ```bash
-/etc/krb5.conf
+sudo vi /etc/krb5.conf
 ```
 
 ### Optional - If needed, create krb5.conf.d directory with permissions DO NOT USE 777 unless trash lab and dont care
