@@ -53,6 +53,10 @@ Restart wsl (Windows powershell) using
 wsl --shutdown
 ```
 
+run the following command to include the official project’s PPA (personal package archive) in your system’s list of sources:
+```bash
+sudo apt-add-repository ppa:ansible/ansible
+```
 
 new ubuntu wsl 
 ```bash
