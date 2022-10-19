@@ -30,8 +30,8 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 
-**note**
-If resolv.conf settings get overwrittent after wsl restart, run the following to set the file as immutable
+> **note**
+> If resolv.conf settings get overwrittent after wsl restart, run the following to set the file as immutable
 ```shell
 sudo rm /etc/resolv.conf
 sudo bash -c 'echo "nameserver 10.26.5.37" > /etc/resolv.conf'
