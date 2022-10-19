@@ -71,8 +71,8 @@ sudo apt -y install ansible
 ## kerberos authentication support
 ```bash
 sudo apt -y install python3-pip
-** Already installed from previous step sudo apt-get -y install python3-dev libkrb5-dev krb5-user
-** Already installed from previous step pip3 install pywinrm[kerberos]
+sudo apt-get -y install python3-dev libkrb5-dev krb5-user
+pip3 install pywinrm[kerberos]
 ```
 
 ### https://access.redhat.com/solutions/3486461
