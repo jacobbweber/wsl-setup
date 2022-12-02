@@ -131,17 +131,31 @@ git config --global credential.https://dev.azure.com.useHttpPath true
 sudo apt-add-repository ppa:ansible/ansible
 
 https://learn.microsoft.com/en-us/powershell/scripting/install/install-ubuntu?view=powershell-7.2
-# Update the list of packages
+Update the list of packages
+```bash
 sudo apt-get update
-# Install pre-requisite packages.
+```
+Install pre-requisite packages.
+```bash
 sudo apt-get install -y wget apt-transport-https software-properties-common
-# Download the Microsoft repository GPG keys
+```
+Download the Microsoft repository GPG keys
+```bash
 wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
-# Register the Microsoft repository GPG keys
+```
+Register the Microsoft repository GPG keys
+```bash
 sudo dpkg -i packages-microsoft-prod.deb
-# Update the list of packages after we added packages.microsoft.com
+```
+Update the list of packages after we added packages.microsoft.com
+```bash
 sudo apt-get update
-# Install PowerShell
+```
+Install PowerShell
+```bash
 sudo apt-get install -y powershell
-# Start PowerShell
+```
+Start PowerShell
+```bash
 pwsh
+```
